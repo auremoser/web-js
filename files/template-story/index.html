@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quakes</title>
+        <!-- Load styles -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Load c3.css -->
+        <link href="c3.min.css" rel="stylesheet" type="text/css">
+        <!-- Load d3.js and c3.js -->
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="c3.min.js"></script>
+        <!-- include cartocss -->
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1>Ring of Fire: Quakes Across the Globe</h1>
+            </div>
+            <div id="main">
+
+                <p>The "ring of fire" is an area skirting the Pacific Ocean that is associated with an almost continuous series of oceanic trenches, volcanic arcs, and volcanic belts and/or plate movements.</p>
+                <p>You can see some of the most epic geological phenomena in San Francisco and its Pacific environs via the USGS maps; <a href="http://earthquaketrack.com/v/sf/recent" alt="earthquakes">they release data about Bay Area earthquake probabilities continuously</a>; this interactive will work with these data to create a series of visualizations related to the earthquake tracking.</p>
+
+                <br>
+
+                <div id="chart"></div>
+                
+
+                <div id="map">
+                    <iframe width="100%" height="520" frameborder="0" src="https://team.cartodb.com/u/aureliamoser/viz/f5e77aac-7edb-11e5-b68c-0ecfd53eb7d3/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                </div>
+                
+            </div>
+                         
+            <div id="footer">
+                <p>Code and image by Aurelia. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+            </div>
+        </div>
+    </body>
+    <!-- include cartodb.js library -->
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    <!-- include your script -->
+    <script src="script.js"></script>
+</html>
